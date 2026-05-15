@@ -1,0 +1,22 @@
+{
+  "name": "betfair-analyst",
+  "version": "1.0.0",
+  "description": "AI Sports Betting Value Detection System",
+  "main": "fetch_data.js",
+  "scripts": {
+    "fetch": "node fetch_data.js",
+    "evaluate": "node evaluate_picks.js",
+    "daily": "bash run_daily.sh",
+    "eval": "bash run_evaluate.sh",
+    "test": "node test_match.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.16.0",
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
+    "dotenv": "^17.4.2"
+  }
+}

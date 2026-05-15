@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables (contains API keys)
+.env
+
+# Generated dossiers (rebuilt daily)
+dossier.txt
+todays_dossier.txt
+evaluation_dossier.txt
+dossier_backup_*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
