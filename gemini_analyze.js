@@ -50,7 +50,7 @@ async function callGemini(systemPrompt, userMessage) {
         model: GEMINI_MODEL,
         system_instruction: { parts: [{ text: systemPrompt }] },
         contents: [{ role: 'user', parts: [{ text: userMessage }] }],
-        generationConfig: { temperature: 0.3, maxOutputTokens: 4096 }
+        generationConfig: { temperature: 0.3, maxOutputTokens: 16384 }
     };
 
     const res = await httpPost(url, payload);

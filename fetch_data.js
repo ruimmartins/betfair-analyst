@@ -21,14 +21,14 @@ function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 // NewsAPI rate limit tracker
 const newsApiState = { rateLimited: false };
 
-// API-Football rate limiter: max 10 requests per minute
+// API-Football rate limiter: max 300 requests per minute
 const apiFootballRateLimit = {
     timestamps: [],
     async wait() {
         const now = Date.now();
         // Remove timestamps older than 60s
         this.timestamps = this.timestamps.filter(t => now - t < 60000);
-        if (this.timestamps.length >= 10) {
+        if (this.timestamps.length >= 300) {
             const waitTime = 60000 - (now - this.timestamps[0]) + 100;
             console.log(`  ⏳ Rate limit: waiting ${Math.ceil(waitTime/1000)}s for API-Football...`);
             await sleep(waitTime);

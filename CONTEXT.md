@@ -88,7 +88,7 @@ Node.js, axios, date-fns, dotenv
 
 ## Critical Context
 - Season atual: 2025 (para /teams/statistics, /injuries, /h2h)
-- API-Football rate limit: 10 requests/minuto
+- API-Football rate limit: 300 requests/minuto
 - API-Football bookmaker IDs: Betfair=3, Bet365=8
 - Matching: ≥0.6 similarity ambas equipas, word length >3, distinctive word ≥5 chars
 - `date-fns-tz` v3 usa `toZonedTime` (não `utcToZonedTime`)

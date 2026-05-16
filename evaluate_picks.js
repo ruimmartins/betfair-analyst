@@ -13,7 +13,7 @@ const apiFootballRateLimit = {
     async wait() {
         const now = Date.now();
         this.timestamps = this.timestamps.filter(t => now - t < 60000);
-        if (this.timestamps.length >= 10) {
+        if (this.timestamps.length >= 300) {
             const waitTime = 60000 - (now - this.timestamps[0]) + 100;
             console.log(`  ⏳ Rate limit: waiting ${Math.ceil(waitTime/1000)}s...`);
             await sleep(waitTime);

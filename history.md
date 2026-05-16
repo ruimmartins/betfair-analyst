@@ -98,3 +98,64 @@ Sem esta base estatística robusta, que representa 70% do critério de decisão,
 📊 Melhor Odd Encontrada: 2.45 (Betfair)
 📝 Justificação: O Liverpool tem uma motivação altíssima para garantir a qualificação para a Liga dos Campeões. O Aston Villa apresenta uma forma recente fraca (DLLDD) e tem desfalques defensivos cruciais (Martinez e Konsa), o que enfraquece a sua capacidade de conter o ataque do Liverpool. A odd de 2.45 para a vitória do Liverpool parece desajustada face a estes fatores.
 ---
+
+## 2026-05-16
+
+Para a análise do dossier de hoje, concentrei-me nos jogos onde a discrepância entre a forma das equipas, a motivação e as odds oferecidas pelos bookmakers se alinha com os princípios de valor (+EV), especialmente o fator "urgência de sobrevivência" e a motivação para objetivos como a Champions League.
+
+Aqui estão as oportunidades de valor (+EV) identificadas:
+
+---
+🔥 Bundesliga - Borussia Mönchengladbach vs 1899 Hoffenheim
+⏰ 2026-05-16 14:30
+💡 Aposta Sugerida: Vitória do Hoffenheim
+📊 Melhor Odd Encontrada: 1.62 (Betfair)
+📝 Justificação: O Hoffenheim apresenta uma forma significativamente superior (GF:65 GC:48) e tem uma motivação altíssima, lutando por uma vaga na Champions League. O Mönchengladbach, por outro lado, teve uma temporada fraca (GF:38 GC:53) e não tem objetivos concretos. Apesar do H2H histórico favorecer o Gladbach, a forma atual e a necessidade de vitória do Hoffenheim tornam a odd de 1.62 bastante atrativa.
+
+---
+🔥 Bundesliga - SC Freiburg vs RB Leipzig
+⏰ 2026-05-16 14:30
+💡 Aposta Sugerida: Vitória do RB Leipzig
+📊 Melhor Odd Encontrada: 2.50 (Betfair)
+📝 Justificação: O RB Leipzig tem uma forma
+
+## 2026-05-16
+
+Aqui estão as apostas de valor (+EV) identificadas no dossier de hoje:
+
+🔥 Bundesliga - Borussia Mönchengladbach vs 1899 Hoffenheim
+⏰ 2026-05-16 14:30
+💡 Aposta Sugerida: Vitória do Fora (1899 Hoffenheim)
+📊 Melhor Odd Encontrada: 1.62 (Betfair)
+📝 Justificação: O Hoffenheim está em excelente forma e altamente motivado na luta por um lugar na Liga dos Campeões, enquanto o Gladbach tem uma forma fraca e nada a disputar. A odd de 1.62 para a vitória fora parece desajustada face à clara diferença de motivação e momento das equipas.
+---
+🔥 Bundesliga - Eintracht Frankfurt vs VfB Stuttgart
+⏰ 2026-05-16 14:30
+💡 Aposta Sugerida: Vitória do Fora (VfB Stuttgart)
+📊 Melhor Odd Encontrada: 1.87 (Betfair)
+📝 Justificação: O Stuttgart apresenta uma forma muito forte e está a lutar intensamente por uma vaga na Liga dos Campeões, o que lhe confere uma motivação superior. O Frankfurt tem uma forma inconsistente, e a odd de 1.87 para a vitória do Stuttgart parece subestimar o seu ímpeto e necessidade de vencer.
+---
+🔥 Primeira Liga - Moreirense vs AVS
+⏰ 2026-05-16 15:30
+💡 Aposta Sugerida: Vitória do Casa (Moreirense)
+📊 Melhor Odd Encontrada: 2.10 (Betfair)
+📝 Justificação: O AVS já está despromovido e em péssima forma, sem qualquer motivação para este último jogo. O Moreirense, a jogar em casa, enfrenta um adversário completamente desinteressado, o que torna a odd de 2.10 para a vitória do Moreirense uma aposta de valor, apesar da sua forma mista.
+---
+🔥 Primeira Liga - SC Braga vs Estrela
+⏰ 2026-05-16 18:00
+💡 Aposta Sugerida: Handicap Asiático SC Braga -1
+📊 Melhor Odd Encontrada: 2.88 (Betfair)
+📝 Justificação: O SC Braga está em boa forma e provavelmente motivado por um lugar europeu, com uma defesa sólida. O Estrela, em má forma e com uma defesa frágil (54 golos sofridos), deverá ter dificuldades. A odd de 2.88 para o Braga vencer por dois ou mais golos oferece um excelente valor.
+---
+🔥 Primeira Liga - Sporting CP vs GIL Vicente
+⏰ 2026-05-16 20:30
+💡 Aposta Sugerida: Handicap Asiático Sporting CP -2
+📊 Melhor Odd Encontrada: 2.38 (Betfair)
+📝 Justificação: O Sporting é uma equipa dominante, com um ataque prolífico (86 GF) e uma defesa forte (24 GC), e estará a lutar pelo título ou por uma posição de topo. Apesar das lesões, a profundidade do seu plantel e o fator casa devem garantir uma vitória confortável. A odd de 2.38 para vencer por três ou mais golos tem valor.
+---
+🔥 Serie A - Palmeiras vs Cruzeiro
+⏰ 2026-05-17 01:00
+💡 Aposta Sugerida: Empate
+📊 Melhor Odd Encontrada: 3.40 (Betfair)
+📝 Justificação: Embora o Palmeiras seja o líder e esteja em excelente forma, as notícias indicam que o treinador do Cruzeiro, Artur Jorge, tem um histórico invicto contra Abel Ferreira (treinador do Palmeiras) em seis confrontos anteriores. Este fator tático, combinado com o recente impulso do Cruzeiro na Copa do Brasil, sugere que a odd de 3.40 para o empate está subvalorizada.
+---
