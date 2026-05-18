@@ -5,6 +5,7 @@ node_modules/
 .env
 
 # Generated dossiers (rebuilt daily)
+history.md
 dossier.txt
 todays_dossier.txt
 evaluation_dossier.txt
