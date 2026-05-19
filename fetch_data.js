@@ -79,6 +79,23 @@ const TARGET_LEAGUES = [
     2,   // UEFA Champions League
     3,   // UEFA Europa League
     848, // UEFA Europa Conference League
+    // South American
+    13,  // CONMEBOL Libertadores
+    11,  // CONMEBOL Sudamericana
+    // International (Selections)
+    1,   // World Cup
+    4,   // Euro Championship
+    9,   // Copa America
+    5,   // UEFA Nations League
+    // Super Cups
+    528, // Community Shield (England)
+    556, // Super Cup (Spain)
+    547, // Super Cup (Italy)
+    529, // Super Cup (Germany)
+    526, // Trophée des Champions (France)
+    632, // Supercopa do Brasil (Brazil)
+    550, // Super Cup (Portugal)
+    543, // Super Cup (Netherlands)
 ];
 
 // Mapping league IDs → news language (ISO 639-1)
@@ -92,6 +109,16 @@ const LEAGUE_LANGUAGE = {
     94: 'pt', 96: 'pt', 97: 'pt',   // Portugal
     88: 'nl', 90: 'nl',              // Netherlands
     2: 'en', 3: 'en', 848: 'en',    // European (default English)
+    13: 'es', 11: 'es',              // South American (Spanish)
+    1: 'en', 4: 'en', 9: 'en', 5: 'en', // International
+    528: 'en',                         // Community Shield
+    556: 'es',                         // Super Cup (Spain)
+    547: 'it',                         // Super Cup (Italy)
+    529: 'de',                         // Super Cup (Germany)
+    526: 'fr',                         // Trophée des Champions
+    632: 'pt',                         // Supercopa do Brasil
+    550: 'pt',                         // Super Cup (Portugal)
+    543: 'nl',                         // Super Cup (Netherlands)
 };
 
 // === Fuzzy Matching (improved) ===
