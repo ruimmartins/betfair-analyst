@@ -6,6 +6,12 @@ set -euo pipefail
 # Fetch data → LLM Analysis (Gemini) → Save picks → Telegram
 # ============================================================
 
+# Ensure PATH includes common Node.js locations (for cron)
+export PATH=/usr/local/bin:/usr/bin:/bin:$PATH
+
+# If using nvm, load it
+[ -s "$HOME/.nvm/nvm.sh" ] && \. "$HOME/.nvm/nvm.sh"
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 

@@ -6,6 +6,62 @@ const { subDays } = require('date-fns');
 const { formatInTimeZone } = require('date-fns-tz');
 
 const API_FOOTBALL_KEY = process.env.API_FOOTBALL_KEY;
+const NEWS_API_KEY = process.env.NEWS_API_KEY;
+
+// NewsAPI rate limit tracker
+const newsApiState = { rateLimited: false };
+
+// League to language mapping (for news)
+const LEAGUE_LANGUAGE = {
+    39: 'en', 45: 'en', 48: 'en',   // England
+    140: 'es', 143: 'es',            // Spain
+    135: 'it', 137: 'it',            // Italy
+    78: 'de', 81: 'de',              // Germany
+    61: 'fr', 66: 'fr',              // France
+    71: 'pt', 73: 'pt',              // Brazil (Portuguese)
+    94: 'pt', 96: 'pt', 97: 'pt',   // Portugal
+    88: 'nl', 90: 'nl',              // Netherlands
+    2: 'en', 3: 'en', 848: 'en',    // European (default English)
+    13: 'es', 11: 'es',              // South American (Spanish)
+    1: 'en', 4: 'en', 9: 'en', 5: 'en', // International
+    528: 'en',                         // Community Shield
+    556: 'es',                         // Super Cup (Spain)
+    547: 'it',                         // Super Cup (Italy)
+    529: 'de',                         // Super Cup (Germany)
+    526: 'fr',                         // Trophée des Champions
+    632: 'pt',                         // Supercopa do Brasil
+    550: 'pt',                         // Super Cup (Portugal)
+    543: 'nl',                         // Super Cup (Netherlands)
+};
+
+// Keywords that indicate irrelevant news (scheduling, streaming, TV, tickets)
+const IRRELEVANT_PATTERNS = [
+    /onde assistir/i, /where to watch/i, /how to watch/i, /live stream/i,
+    /tv channel/i, /streaming options/i, /horário/i, /kick.?off time/i,
+    /tickets?\b/i, /bilhetes/i, /transmiss/i, /broadcast/i,
+    /fantasy\s*(football|soccer)/i, /fpl\b/i, /dream\s*team/i,
+    /fan\s*zone/i, /merchandise/i
+];
+
+// Keywords that indicate relevant POST-MATCH news (match reports, analysis, injuries revealed, reactions)
+const RELEVANT_PATTERNS = [
+    /injur/i, /lesão/i, /lesionado/i, /lesões/i,
+    /suspend/i, /suspenso/i, /expuls/i, /red card/i, /cartão vermelho/i,
+    /match\s*report/i, /relato/i, /crónica/i,
+    /analysis/i, /anális/i, /tactical/i, /tática/i,
+    /reaction/i, /reação/i, /interview/i, /entrevista/i,
+    /press\s*conference/i, /coletiva/i,
+    /goal/i, /golo/i, /scored/i, /marcou/i,
+    /win/i, /won/i, /vitória/i, /venceu/i,
+    /loss/i, /lost/i, /derrota/i, /perdeu/i,
+    /draw/i, /drew/i, /empate/i,
+    /performance/i, /desempenho/i,
+    /coach/i, /manager/i, /treinador/i,
+    /crisis/i, /crise/i,
+    /celebration/i, /comemoração/i,
+    /controversy/i, /polémica/i, /polêmica/i,
+    /var\b/i, /penalty/i, /pênalti/i, /penálti/i
+];
 
 // === API-Football Rate Limiter ===
 const apiFootballRateLimit = {
@@ -42,6 +98,7 @@ async function withRetry(fn, retries = 2, delayMs = 1000) {
 function validateKeys() {
     const missing = [];
     if (!API_FOOTBALL_KEY) missing.push('API_FOOTBALL_KEY');
+    // NEWS_API_KEY is optional - will fallback to Google RSS
     if (missing.length > 0) {
         console.error(`ERRO: Keys em falta no .env: ${missing.join(', ')}`);
         process.exit(1);
@@ -126,44 +183,267 @@ async function fetchMatchTimeline(fixtureId) {
     }
 }
 
+// === News Functions ===
+function parseGoogleNewsRSS(xml) {
+    const items = [];
+    const itemMatches = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)];
+    for (const match of itemMatches) {
+        const content = match[1];
+        const title = content.match(/<title>(.*?)<\/title>/)?.[1] || '';
+        const link = content.match(/<link>(.*?)<\/link>/)?.[1] || '';
+        const pubDate = content.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] || '';
+        const description = content.match(/<description>(.*?)<\/description>/)?.[1] || '';
+        const source = content.match(/<source[^>]*>(.*?)<\/source>/)?.[1] || '';
+        // Decode HTML entities in title
+        const cleanTitle = title.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+        items.push({ title: cleanTitle, link, pubDate, description, source });
+    }
+    return items;
+}
+
+function isRelevantNews(title, description) {
+    const text = `${title} ${description || ''}`;
+    // Exclude if matches irrelevant patterns
+    if (IRRELEVANT_PATTERNS.some(p => p.test(text))) return false;
+    // Include if matches relevant patterns, or if it has a meaningful description
+    if (RELEVANT_PATTERNS.some(p => p.test(text))) return true;
+    // Default: include if description is substantial (50+ chars)
+    return (description || '').length >= 50;
+}
+
+async function fetchArticleContent(url) {
+    try {
+        const res = await withRetry(() => axios.get(url, {
+            timeout: 15000,
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+        }));
+        let text = res.data;
+        // Remove script and style tags completely
+        text = text.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+        text = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+        // Remove all HTML tags
+        text = text.replace(/<[^>]+>/g, ' ');
+        // Remove multiple spaces
+        text = text.replace(/\s+/g, ' ').trim();
+        // Return first 2000 chars (enough for context)
+        return text.slice(0, 2000);
+    } catch (error) {
+        return null;
+    }
+}
+
+async function fetchNewsFromNewsAPI(homeTeam, awayTeam, apiKey, language) {
+    const allArticles = [];
+    // For post-match news, look at last 2 days (the match + day after)
+    const fromDate = new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+
+    // Search query must mention BOTH teams (the match itself)
+    const queries = [
+        `"${homeTeam}" AND "${awayTeam}"`
+    ];
+
+    for (const q of queries) {
+        await sleep(THROTTLE_MS);
+        try {
+            const res = await withRetry(() => axios.get('https://newsapi.org/v2/everything', {
+                params: {
+                    q,
+                    from: fromDate,
+                    sortBy: 'relevancy',
+                    language,
+                    pageSize: 10,
+                    apiKey
+                },
+                timeout: 10000
+            }));
+            if (res.data.status === 'ok' && res.data.articles) {
+                allArticles.push(...res.data.articles.map(a => ({
+                    title: a.title,
+                    description: a.description || '',
+                    source: a.source?.name || '',
+                    url: a.url
+                })));
+            }
+        } catch (error) {
+            const status = error.response?.status;
+            if (status === 429) {
+                console.log(`  ⚠️ NewsAPI rate limit detected, switching to Google RSS`);
+                newsApiState.rateLimited = true;
+                break;
+            }
+            console.error(`  NewsAPI error: ${error.response?.data?.message || error.message}`);
+        }
+    }
+
+    if (allArticles.length === 0) return "Sem notícias pós-jogo encontradas.";
+
+    // Deduplicate by title
+    const seen = new Set();
+    const unique = allArticles.filter(a => {
+        if (!a.title) return false;
+        const key = a.title.toLowerCase().slice(0, 50);
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+    });
+
+    // Filter: MUST mention BOTH teams
+    const homeLower = homeTeam.toLowerCase();
+    const awayLower = awayTeam.toLowerCase();
+    const bothTeamsMentioned = unique.filter(a => {
+        const text = `${a.title} ${a.description || ''}`.toLowerCase();
+        return text.includes(homeLower) && text.includes(awayLower);
+    });
+
+    // Fallback: if no articles mention both teams, use all relevant
+    const results = bothTeamsMentioned.length > 0 ? bothTeamsMentioned : unique;
+
+    // Limit to 3 and fetch full content
+    const top = results.slice(0, 3);
+    const newsWithContent = [];
+
+    try {
+        for (const article of top) {
+            const body = await fetchArticleContent(article.url);
+            if (body && body.length > 50) {
+                newsWithContent.push({ body });
+            }
+        }
+    } catch (e) {
+        console.log(`  Scraping skipped due to error: ${e.message}`);
+    }
+
+    // If no scraped content, fallback to description from API
+    if (newsWithContent.length === 0) {
+        return top.map(a => {
+            let line = `- ${a.title}`;
+            if (a.description) line += `\n  ${a.description}`;
+            return line;
+        }).join('\n');
+    }
+
+    // Return only body content
+    return newsWithContent.map(n => `- ${n.body}`).join('\n\n');
+}
+
+async function fetchNewsFromGoogleRSS(homeTeam, awayTeam) {
+    // Post-match queries focus on match reports and analysis
+    const queries = [
+        `"${homeTeam}" "${awayTeam}" match report analysis reaction`,
+        `"${homeTeam}" "${awayTeam}" injury tactical performance`
+    ];
+
+    const allArticles = [];
+
+    for (const query of queries) {
+        await sleep(THROTTLE_MS);
+        try {
+            const encoded = encodeURIComponent(query);
+            const url = `https://news.google.com/rss/search?q=${encoded}&hl=en&gl=US&ceid=US:en`;
+            const res = await withRetry(() => axios.get(url, { timeout: 10000 }));
+            const items = parseGoogleNewsRSS(res.data);
+            allArticles.push(...items);
+        } catch (error) {
+            console.error(`  Error fetching news: ${error.message}`);
+        }
+    }
+
+    if (allArticles.length === 0) return "Sem notícias pós-jogo encontradas.";
+
+    // Deduplicate by title
+    const seen = new Set();
+    const unique = allArticles.filter(a => {
+        if (!a.title) return false;
+        const key = a.title.toLowerCase().slice(0, 50);
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+    });
+
+    // Filter for relevant content
+    const relevant = unique.filter(a => isRelevantNews(a.title, a.description));
+    if (relevant.length === 0) return "Sem notícias pós-jogo relevantes.";
+
+    // Fetch full content for top 3 articles
+    const top = relevant.slice(0, 3);
+    const newsWithContent = [];
+
+    try {
+        for (const article of top) {
+            if (article.link) {
+                const body = await fetchArticleContent(article.link);
+                if (body && body.length > 50) {
+                    newsWithContent.push({ body });
+                }
+            }
+        }
+    } catch (e) {
+        console.log(`  Scraping skipped: ${e.message}`);
+    }
+
+    // If no scraped content, return titles
+    if (newsWithContent.length === 0) {
+        return top.map(a => `- ${a.title}${a.source ? ` (${a.source})` : ''}`).join('\n');
+    }
+
+    // Return full content
+    return newsWithContent.map(n => `- ${n.body}`).join('\n\n');
+}
+
+async function fetchPostMatchNews(homeTeam, awayTeam, leagueId) {
+    console.log(`  Fetching post-match news for: ${homeTeam} vs ${awayTeam}`);
+
+    const language = LEAGUE_LANGUAGE[leagueId] || 'en';
+
+    // If NewsAPI key available and not rate limited, use it
+    if (NEWS_API_KEY && NEWS_API_KEY !== 'YOUR_NEWSAPI_KEY_HERE' && !newsApiState.rateLimited) {
+        return await fetchNewsFromNewsAPI(homeTeam, awayTeam, NEWS_API_KEY, language);
+    }
+
+    // Fallback to Google News RSS
+    return await fetchNewsFromGoogleRSS(homeTeam, awayTeam);
+}
+
 // === Parsing picks from history.md ===
 function parsePicksForDate(historyContent, targetDate) {
     const lines = historyContent.split('\n');
     const picks = [];
     let currentDate = null;
-    let currentPick = null;
 
     for (const line of lines) {
-        // Detect date headers like "## 2026-05-10" or "# Picks 2026-05-10" or lines containing the date
-        const dateMatch = line.match(/(\d{4}-\d{2}-\d{2})/);
-        if (dateMatch && (line.startsWith('#') || line.startsWith('##'))) {
+        // Detect date headers like "## 2026-05-10"
+        const dateMatch = line.match(/^##?\s*(\d{4}-\d{2}-\d{2})/);
+        if (dateMatch) {
             currentDate = dateMatch[1];
+            continue;
         }
 
         // Only process picks for the target date
         if (currentDate !== targetDate) continue;
 
-        // Match team names from various formats:
-        // "Team A vs Team B", "Team A - Team B", with optional emojis/markdown
-        const vsMatch = line.match(/(?:^|\s)([A-Za-zÀ-ÿ\s.'-]+?)\s+(?:vs\.?|x|-)\s+([A-Za-zÀ-ÿ\s.'-]+?)(?:\s*[\(|\\n]|$)/i);
+        // Match lines with format: "🔥 League - Team A vs Team B" or just "Team A vs Team B"
+        // First, remove emojis and league names
+        let cleanLine = line.replace(/🔥|⚽|🏆|⏰|💡|📊|📝/g, '').trim();
+        
+        // Remove league prefixes like "Bundesliga -", "Premier League -", etc.
+        cleanLine = cleanLine.replace(/^(Bundesliga|Premier League|La Liga|Serie A|Ligue 1|Primeira Liga|Liga Portugal|Eredivisie|Championship|MLS|Serie A \(Brasil\)|Brasileirão)\s*-\s*/i, '');
+        
+        // Now try to match "Team A vs Team B" pattern
+        const vsMatch = cleanLine.match(/^([A-Za-zÀ-ÿ\s.'\-0-9]+?)\s+(?:vs\.?|x)\s+([A-Za-zÀ-ÿ\s.'\-0-9]+?)(?:\s*$|⏰)/i);
         if (vsMatch) {
-            const home = vsMatch[1].replace(/[*_#🔥⚽🏆]/g, '').trim();
-            const away = vsMatch[2].replace(/[*_#🔥⚽🏆]/g, '').trim();
-            if (home.length > 2 && away.length > 2) {
-                picks.push({ home, away });
-            }
-        }
-    }
-
-    // Fallback: if no date-filtered picks found, try a broader regex on the whole file
-    // but only if the file is small (likely only recent picks)
-    if (picks.length === 0) {
-        const fallbackRegex = /([A-Za-zÀ-ÿ\s.'-]{3,}?)\s+(?:vs\.?|x|-)\s+([A-Za-zÀ-ÿ\s.'-]{3,}?)(?:\s*[\(|]|$)/gm;
-        let m;
-        while ((m = fallbackRegex.exec(historyContent)) !== null) {
-            const home = m[1].replace(/[*_#🔥⚽🏆]/g, '').trim();
-            const away = m[2].replace(/[*_#🔥⚽🏆]/g, '').trim();
-            if (home.length > 2 && away.length > 2 && !home.startsWith('http')) {
+            let home = vsMatch[1].replace(/[*_#]/g, '').trim();
+            let away = vsMatch[2].replace(/[*_#]/g, '').trim();
+            
+            // Skip if it looks like a league name or is too short
+            const skipWords = ['bundesliga', 'premier', 'league', 'serie', 'ligue', 'primeira', 'liga'];
+            const homeNorm = home.toLowerCase();
+            const awayNorm = away.toLowerCase();
+            
+            if (home.length > 2 && away.length > 2 && 
+                !skipWords.some(w => homeNorm === w || awayNorm === w) &&
+                !home.startsWith('http') && !away.startsWith('http')) {
                 picks.push({ home, away });
             }
         }
@@ -213,13 +493,27 @@ async function main() {
     
     console.log(`Evaluating picks for date: ${yesterdayStr}`);
     
-    const teamsToSearch = parsePicksForDate(historyContent, yesterdayStr);
-    console.log(`Found ${teamsToSearch.length} picks to evaluate:`, teamsToSearch.map(t => `${t.home} vs ${t.away}`));
+    const allPicks = parsePicksForDate(historyContent, yesterdayStr);
+    
+    // Deduplicate picks based on normalized team names
+    const uniquePicks = [];
+    const seen = new Set();
+    for (const pick of allPicks) {
+        const key = `${normalizeTeamName(pick.home)}|${normalizeTeamName(pick.away)}`;
+        if (!seen.has(key)) {
+            seen.add(key);
+            uniquePicks.push(pick);
+        }
+    }
+    
+    const teamsToSearch = uniquePicks;
+    console.log(`Found ${teamsToSearch.length} unique picks to evaluate for ${yesterdayStr}:`);
+    teamsToSearch.forEach((t, i) => console.log(`  ${i+1}. ${t.home} vs ${t.away}`));
 
     if (teamsToSearch.length === 0) {
         console.log("No picks found for yesterday in history.md.");
-        fs.writeFileSync(evaluationPath, `Não foram encontradas picks para ${yesterdayStr} no history.md.`);
-        return;
+        fs.writeFileSync(evaluationPath, `📚 DOSSIER DE AVALIAÇÃO - PICKS DE ${yesterdayStr} 📚\n\n========================================\n\n⚠️ Não foram encontrados picks para avaliar nesta data.\n`);
+        process.exit(0);
     }
 
     console.log("Fetching yesterday's fixtures...");
@@ -243,13 +537,15 @@ async function main() {
             const away = f.teams.away.name;
             const score = f.score.fulltime;
             const status = f.fixture.status?.short;
+            const leagueId = f.league.id;
             
             console.log(`  Processing: ${home} vs ${away}...`);
             
-            // Fetch events and timeline in parallel
-            const [events, timeline] = await Promise.all([
+            // Fetch events, timeline, and news in parallel
+            const [events, timeline, news] = await Promise.all([
                 fetchMatchEvents(f.fixture.id),
-                fetchMatchTimeline(f.fixture.id)
+                fetchMatchTimeline(f.fixture.id),
+                fetchPostMatchNews(home, away, leagueId)
             ]);
             
             // COMPACT OUTPUT
@@ -261,6 +557,10 @@ async function main() {
             if (timeline) {
                 report += `STATS: ${home}[${timeline.home.possession}%, ${timeline.home.shots}/${timeline.home.shotsOnTarget}, ${timeline.home.corners}corners] vs `;
                 report += `${away}[${timeline.away.possession}%, ${timeline.away.shots}/${timeline.away.shotsOnTarget}, ${timeline.away.corners}corners]\n`;
+            }
+            
+            if (news) {
+                report += `NEWS:\n${news}\n`;
             }
             
             report += `\n`;

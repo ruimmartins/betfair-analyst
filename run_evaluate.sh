@@ -6,8 +6,21 @@ set -euo pipefail
 # Evaluate picks → LLM extracts lessons → Update lessons.md
 # ============================================================
 
+# Ensure PATH includes common Node.js locations (for cron)
+export PATH=/usr/local/bin:/usr/bin:/bin:$PATH
+
+# If using nvm, load it
+[ -s "$HOME/.nvm/nvm.sh" ] && \. "$HOME/.nvm/nvm.sh"
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
+
+# Debug: log where we are and what we see
+echo "DEBUG: Running from: $(pwd)"
+echo "DEBUG: history.md exists: $([ -f history.md ] && echo 'YES' || echo 'NO')"
+echo "DEBUG: Node path: $(which node 2>&1 || echo 'node not found in PATH')"
+echo "DEBUG: Node version: $(node --version 2>&1 || echo 'ERROR: cannot execute node')"
+echo ""
 
 # Load .env
 if [ -f .env ]; then
@@ -37,7 +50,13 @@ echo ""
 echo "📡 [1/2] A avaliar picks de ontem..."
 echo ""
 node evaluate_picks.js
+EVAL_EXIT=$?
 echo ""
+
+if [ $EVAL_EXIT -ne 0 ]; then
+    echo "Evaluation aborted."
+    exit 1
+fi
 
 # ---- Step 2: Extract lessons via Gemini ----
 echo "🤖 [2/2] A extrair lições com Gemini..."

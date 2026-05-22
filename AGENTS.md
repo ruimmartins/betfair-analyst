@@ -63,3 +63,29 @@ Picks go to `history.md` only — never to a `.txt` file (per `analyst_prompt.md
 ## Docs
 
 `CONTEXT.md` is the primary architectural reference (no README exists).
+`CRON_SETUP.md` has instructions for setting up automated execution in cron/containers.
+
+## Cron / Automation
+
+Both shell scripts (`run_daily.sh`, `run_evaluate.sh`) are cron-safe:
+- Set PATH explicitly to find `node` in cron's minimal environment
+- Use `__dirname` for absolute paths (Node scripts)
+- Use `$SCRIPT_DIR` and `cd` to ensure correct working directory (bash scripts)
+- Load NVM automatically if present
+
+**Debugging cron issues:**
+```bash
+# Test with minimal environment (simulates cron)
+bash test_cron_env.sh
+
+# Or manually:
+env -i HOME=$HOME PATH=/usr/bin:/bin bash run_evaluate.sh
+```
+
+**Common cron pitfalls:**
+- "No history.md found" → cron's PATH doesn't include node location
+- Fix: Add `PATH=/usr/local/bin:/usr/bin:/bin` at top of crontab
+- Or: Use absolute paths in crontab: `/full/path/to/run_evaluate.sh`
+- Or: Use the provided `cron_wrapper.sh`
+
+See `CRON_SETUP.md` for full setup instructions.
