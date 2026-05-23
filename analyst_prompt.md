@@ -33,5 +33,3 @@ Para cada jogo, usa o seguinte formato:
 ---
 
 Se NÃO encontrares valor real em nenhum jogo, responde apenas com: "Sem oportunidades de valor (+EV) evidentes no dossier de hoje."
-
-Todo o teu output deverá depois ser adicionado e escrito com a ferramenta apropriada no ficheiro exato `betfair-analyst/history.md` (nunca `.txt` nem de boca) usando a ferramenta de `write` ou comandos via `exec` (ex: `echo "..." >> betfair-analyst/history.md`) para manter um registo diário e duradouro das recomendações de apostas.
