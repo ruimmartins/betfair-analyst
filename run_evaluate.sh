@@ -67,3 +67,14 @@ echo ""
 echo "============================================"
 echo "  Evaluation pipeline completo!"
 echo "============================================"
+
+# ---- Step 3: Git commit & push ----
+echo ""
+echo "📦 A fazer commit e push dos ficheiros gerados..."
+git add history.md lessons.md evaluation_dossier.txt 2>/dev/null || true
+if git diff --cached --quiet; then
+    echo "Sem alterações para commitar."
+else
+    git commit -m "eval: lessons $YESTERDAY [auto]"
+    git push && echo "Push concluído." || echo "AVISO: git push falhou (continuando)."
+fi
