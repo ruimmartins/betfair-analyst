@@ -20,3 +20,6 @@
 <!-- 2026-05-25 -->
 - Em confrontos diretos por posições na tabela, a dinâmica de forma recente (e.g., vitórias consecutivas vs. série sem vencer) pode ser um indicador mais fiável do resultado do que a mera dominância estatística de posse ou cantos.
 - Partidas de alta tensão, como playoffs de manutenção, frequentemente resultam num elevado número de cartões devido à intensidade e ao nervosismo inerente à situação.
+
+<!-- 2026-05-26 -->
+- A posse de bola inferior não impede uma equipa de dominar as oportunidades de ataque (e.g., cantos) e vencer o jogo, indicando que a eficácia na criação de perigo é mais relevante que o controlo territorial.
