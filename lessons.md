@@ -28,3 +28,6 @@
 - A saída anunciada de um treinador, especialmente se for um técnico com histórico de sucesso no clube, pode servir como um forte catalisador motivacional para a equipa em finais.
 - Equipas com um histórico recente de sucesso em competições de taça podem desenvolver uma "mentalidade de final", que lhes permite superar desvantagens de forma ou posição na liga em jogos a eliminar.
 - A eficácia clínica na conversão de oportunidades é crucial; uma equipa pode vencer com poucas chances se for letal, mesmo contra um adversário que domina as estatísticas de posse e criação de perigo.
+
+<!-- 2026-05-28 -->
+- Um golo madrugador sofrido por uma equipa favorita pode servir de catalisador, levando-a a reagir com maior intensidade e a demonstrar a sua superioridade ofensiva de forma mais contundente.
