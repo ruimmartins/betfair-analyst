@@ -31,3 +31,9 @@
 
 <!-- 2026-05-28 -->
 - Um golo madrugador sofrido por uma equipa favorita pode servir de catalisador, levando-a a reagir com maior intensidade e a demonstrar a sua superioridade ofensiva de forma mais contundente.
+
+<!-- 2026-05-29 -->
+- Em playoffs de manutenção/promoção, equipas em casa com alta urgência tendem a ser ofensivamente agressivas na primeira mão para construir uma vantagem decisiva, contrariando a aversão ao risco típica de jogos a eliminar.
+- Conflitos internos ou problemas disciplinares de jogadores podem ser superados por uma motivação coletiva extrema em jogos de alta importância, onde o objetivo comum da equipa prevalece.
+- Para equipas altamente motivadas em jogos decisivos, sofrer um golo que iguala o marcador na fase final pode atuar como um catalisador para uma reação ofensiva imediata e contundente.
+- A perspetiva de jogar um jogo decisivo em condições futuras desfavoráveis (e.g., à porta fechada) pode intensificar a urgência e a agressividade ofensiva da equipa na partida anterior para garantir uma vantagem confortável.
