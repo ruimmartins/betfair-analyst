@@ -37,3 +37,9 @@
 - Conflitos internos ou problemas disciplinares de jogadores podem ser superados por uma motivação coletiva extrema em jogos de alta importância, onde o objetivo comum da equipa prevalece.
 - Para equipas altamente motivadas em jogos decisivos, sofrer um golo que iguala o marcador na fase final pode atuar como um catalisador para uma reação ofensiva imediata e contundente.
 - A perspetiva de jogar um jogo decisivo em condições futuras desfavoráveis (e.g., à porta fechada) pode intensificar a urgência e a agressividade ofensiva da equipa na partida anterior para garantir uma vantagem confortável.
+
+<!-- 2026-05-30 -->
+- A "mentalidade de final" é particularmente potente para equipas que procuram um título histórico ou inédito, conferindo-lhes uma vantagem mental mesmo contra adversários estatisticamente superiores.
+- Em finais de alta importância, a disciplina tática e a resiliência defensiva podem ser mais decisivas do que a dominância estatística em posse de bola e cantos.
+- Um golo madrugador marcado por uma equipa considerada underdog numa final pode desestabilizar o plano de jogo do favorito, forçando-o a uma abordagem reativa e menos eficaz.
+- Elevado número de cartões em jogos com estatísticas equilibradas pode indicar uma partida ferozmente disputada, onde a intensidade e o nervosismo podem levar a momentos decisivos tardios.
