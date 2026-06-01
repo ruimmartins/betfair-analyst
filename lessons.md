@@ -43,3 +43,7 @@
 - Em finais de alta importância, a disciplina tática e a resiliência defensiva podem ser mais decisivas do que a dominância estatística em posse de bola e cantos.
 - Um golo madrugador marcado por uma equipa considerada underdog numa final pode desestabilizar o plano de jogo do favorito, forçando-o a uma abordagem reativa e menos eficaz.
 - Elevado número de cartões em jogos com estatísticas equilibradas pode indicar uma partida ferozmente disputada, onde a intensidade e o nervosismo podem levar a momentos decisivos tardios.
+
+<!-- 2026-05-31 -->
+- A resiliência defensiva de uma equipa pode ser recompensada com um golo decisivo nos minutos finais, mesmo quando dominada estatisticamente, sublinhando a importância da concentração até ao apito final.
+- A dominância na posse de bola não impede um elevado número de cartões; a frustração do adversário e a intensidade da disputa pelo resultado podem gerar uma partida "suja" independentemente da distribuição da posse.
