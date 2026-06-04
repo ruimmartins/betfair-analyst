@@ -47,3 +47,10 @@
 <!-- 2026-05-31 -->
 - A resiliência defensiva de uma equipa pode ser recompensada com um golo decisivo nos minutos finais, mesmo quando dominada estatisticamente, sublinhando a importância da concentração até ao apito final.
 - A dominância na posse de bola não impede um elevado número de cartões; a frustração do adversário e a intensidade da disputa pelo resultado podem gerar uma partida "suja" independentemente da distribuição da posse.
+
+<!-- 2026-06-03 -->
+- Em jogos a eliminar, a aversão ao risco e a prioridade em não conceder podem levar a um menor volume de golos, mesmo com uma equipa a demonstrar superioridade estatística.
+- A pressão da luta pela manutenção no campeonato pode comprometer o desempenho de uma equipa numa final de taça, criando um conflito de prioridades que afeta a sua mentalidade.
+- Incidentes graves envolvendo adeptos antes de um jogo crucial podem ser um indicador de distração ou baixa moral para a equipa afetada.
+- Ausências de jogadores importantes podem ser sobrestimadas se a equipa possuir profundidade de plantel ou uma motivação coletiva forte.
+- A poupança de jogadores para competições internacionais (e.g., Mundial) pode diminu
