@@ -54,3 +54,9 @@
 - Incidentes graves envolvendo adeptos antes de um jogo crucial podem ser um indicador de distração ou baixa moral para a equipa afetada.
 - Ausências de jogadores importantes podem ser sobrestimadas se a equipa possuir profundidade de plantel ou uma motivação coletiva forte.
 - A poupança de jogadores para competições internacionais (e.g., Mundial) pode diminu
+
+<!-- 2026-06-09 -->
+- A dominância estatística em posse e cantos não é um preditor infalível de golos, especialmente quando a eficácia ofensiva da equipa dominante é questionável ou a defesa adversária é excecionalmente resiliente.
+- Em jogos a eliminar, a aversão ao risco e a prioridade em não conceder podem levar a um menor volume de golos, mesmo com uma equipa a demonstrar superioridade estatística.
+- A pressão da luta pela manutenção no campeonato pode comprometer o desempenho de uma equipa numa final de taça, criando um conflito de prioridades que afeta a sua mentalidade.
+- Incidentes graves envolvendo adeptos antes de um jogo crucial podem ser um indicador de distração ou baixa moral para a equipa afetada.
