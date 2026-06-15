@@ -60,3 +60,7 @@
 - Em jogos a eliminar, a aversão ao risco e a prioridade em não conceder podem levar a um menor volume de golos, mesmo com uma equipa a demonstrar superioridade estatística.
 - A pressão da luta pela manutenção no campeonato pode comprometer o desempenho de uma equipa numa final de taça, criando um conflito de prioridades que afeta a sua mentalidade.
 - Incidentes graves envolvendo adeptos antes de um jogo crucial podem ser um indicador de distração ou baixa moral para a equipa afetada.
+
+<!-- 2026-06-14 -->
+- Em jogos de abertura de grandes torneios (e.g., Mundial), a motivação e a preparação de equipas consideradas "underdogs" mas com qualidade podem levá-las a anular a superioridade estatística de favoritos, resultando em empates com muitos golos.
+- Em jogos de abertura de grandes torneios, mesmo entre equipas equilibradas, a aversão ao risco inicial pode levar a partidas com poucos golos, decididas por um único golo tardio, onde a eficácia clínica é crucial.
