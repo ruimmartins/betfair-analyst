@@ -5,3 +5,7 @@
 - Em jogos a eliminar, a aversão ao risco geralmente resulta em menos golos, exceto em playoffs de manutenção/promoção onde a urgência em casa na primeira mão pode levar a agressividade ofensiva. Em confrontos diretos na liga, a forma recente é mais fiável que estatísticas. Jogos de abertura de grandes torneios podem ser imprevisíveis: empates com muitos golos para underdogs motivados ou jogos de poucos golos decididos por eficácia devido à cautela inicial.
 - Fatores externos como conflitos de prioridades (manutenção vs. taça), incidentes com adeptos, conflitos internos, problemas logísticos graves ou poupança de jogadores para seleções podem impactar negativamente o desempenho. No entanto, ausências de jogadores importantes podem ser sobrestimadas se a equipa tiver profundidade de plantel ou forte motivação coletiva.
 - Partidas de alta tensão (e.g., playoffs, jogos equilibrados) frequentemente resultam num elevado número de cartões devido à intensidade, nervosismo e frustração, independentemente da dominância na posse de bola.
+
+<!-- 2026-06-16 -->
+- Uma estratégia de jogo explicitamente declarada e focada em maximizar o impacto de um jogador estrela pode ser um forte indicador de eficácia ofensiva, mesmo sem dominância estatística esmagadora.
+- Incidentes externos de alta pressão que afetam individualmente um jogador chave antes do jogo (e.g., problemas legais, logísticos) podem levar a performances voláteis, com momentos de brilho e erros cruciais.
