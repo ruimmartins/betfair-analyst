@@ -9,3 +9,7 @@
 <!-- 2026-06-16 -->
 - Uma estratégia de jogo explicitamente declarada e focada em maximizar o impacto de um jogador estrela pode ser um forte indicador de eficácia ofensiva, mesmo sem dominância estatística esmagadora.
 - Incidentes externos de alta pressão que afetam individualmente um jogador chave antes do jogo (e.g., problemas legais, logísticos) podem levar a performances voláteis, com momentos de brilho e erros cruciais.
+
+<!-- 2026-06-18 -->
+- Em grandes torneios, a intenção declarada de um favorito em dominar cedo, combinada com um underdog que demonstra aceitação da sua inferioridade, pode levar a uma goleada esmagadora.
+- A dominância estatística *extrema* (e.g., posse de bola e cantos esmagadores) pode ser um forte preditor de uma superioridade avassaladora que se traduz em muitos golos, ao contrário da dominância estatística geral.
