@@ -13,3 +13,8 @@
 <!-- 2026-06-18 -->
 - Em grandes torneios, a intenção declarada de um favorito em dominar cedo, combinada com um underdog que demonstra aceitação da sua inferioridade, pode levar a uma goleada esmagadora.
 - A dominância estatística *extrema* (e.g., posse de bola e cantos esmagadores) pode ser um forte preditor de uma superioridade avassaladora que se traduz em muitos golos, ao contrário da dominância estatística geral.
+
+<!-- 2026-06-19 -->
+- Quando a motivação principal de uma equipa é garantir um empate para atingir um objetivo (e.g., qualificação), um golo madrugador sofrido pode levar a uma estratégia de contenção defensiva em vez de uma reação ofensiva agressiva, especialmente contra um adversário forte.
+- A motivação elevada de um underdog pode não ser suficiente para superar as suas limitações ofensivas contra um adversário taticamente superior, especialmente se sofrer um golo madrugador e não conseguir criar perigo.
+- A proximidade de um jogo futuro de alta dificuldade ou importância pode influenciar a abordagem tática de uma equipa no jogo atual, levando a uma gestão de risco ou de esforço que pode afetar o resultado.
