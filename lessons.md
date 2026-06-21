@@ -18,3 +18,7 @@
 - Quando a motivação principal de uma equipa é garantir um empate para atingir um objetivo (e.g., qualificação), um golo madrugador sofrido pode levar a uma estratégia de contenção defensiva em vez de uma reação ofensiva agressiva, especialmente contra um adversário forte.
 - A motivação elevada de um underdog pode não ser suficiente para superar as suas limitações ofensivas contra um adversário taticamente superior, especialmente se sofrer um golo madrugador e não conseguir criar perigo.
 - A proximidade de um jogo futuro de alta dificuldade ou importância pode influenciar a abordagem tática de uma equipa no jogo atual, levando a uma gestão de risco ou de esforço que pode afetar o resultado.
+
+<!-- 2026-06-20 -->
+- A eficácia ofensiva clínica e a capacidade de marcar golos madrugadores podem levar a goleadas, mesmo quando as estatísticas de posse e cantos não refletem uma dominância esmagadora.
+- Favoritos que dominam estatisticamente mas sofrem um golo primeiro demonstram forte resiliência e mentalidade vencedora ao conseguir reverter o resultado com golos tardios.
