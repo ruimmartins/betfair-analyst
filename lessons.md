@@ -22,3 +22,7 @@
 <!-- 2026-06-20 -->
 - A eficácia ofensiva clínica e a capacidade de marcar golos madrugadores podem levar a goleadas, mesmo quando as estatísticas de posse e cantos não refletem uma dominância esmagadora.
 - Favoritos que dominam estatisticamente mas sofrem um golo primeiro demonstram forte resiliência e mentalidade vencedora ao conseguir reverter o resultado com golos tardios.
+
+<!-- 2026-06-21 -->
+- A necessidade de um favorito reagir a um resultado dececionante anterior pode amplificar a sua motivação e eficácia ofensiva, resultando numa vitória dominante e com muitos golos.
+- Múltiplas e complexas pressões externas sobre um underdog podem, paradoxalmente, fortalecer a sua coesão defensiva e resiliência, permitindo-lhes resistir a um favorito estatisticamente dominante e obter um resultado positivo.
