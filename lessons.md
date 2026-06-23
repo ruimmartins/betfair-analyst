@@ -26,3 +26,6 @@
 <!-- 2026-06-21 -->
 - A necessidade de um favorito reagir a um resultado dececionante anterior pode amplificar a sua motivação e eficácia ofensiva, resultando numa vitória dominante e com muitos golos.
 - Múltiplas e complexas pressões externas sobre um underdog podem, paradoxalmente, fortalecer a sua coesão defensiva e resiliência, permitindo-lhes resistir a um favorito estatisticamente dominante e obter um resultado positivo.
+
+<!-- 2026-06-22 -->
+- A equipa favorita com forte motivação e um jogador estrela pode superar um revés ofensivo significativo (e.g., penálti falhado) e ainda assim garantir a vitória, demonstrando resiliência e capacidade de adaptação.
