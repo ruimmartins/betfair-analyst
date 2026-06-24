@@ -29,3 +29,9 @@
 
 <!-- 2026-06-22 -->
 - A equipa favorita com forte motivação e um jogador estrela pode superar um revés ofensivo significativo (e.g., penálti falhado) e ainda assim garantir a vitória, demonstrando resiliência e capacidade de adaptação.
+
+<!-- 2026-06-23 -->
+- A dominância estatística extrema (e.g., posse de bola e cantos esmagadores) indica controlo do jogo, mas não garante golos ou vitória sem eficácia clínica na finalização.
+- A ausência ou limitação de um jogador ofensivo chave pode ser um fator decisivo para a ineficácia de um favorito, mesmo com dominância estatística, se a equipa não tiver substitutos com capacidade de finalização semelhante.
+- A organização defensiva e resiliência de um underdog podem anular a dominância estatística extrema de um favorito, resultando em empates sem golos.
+- A forte motivação de um favorito para reagir a um resultado negativo pode garantir uma vitória, mas não necessariamente uma goleada, especialmente contra um adversário que, apesar de inferior em posse, consegue gerar perigo em bolas paradas.
