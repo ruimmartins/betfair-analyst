@@ -35,3 +35,9 @@
 - A ausência ou limitação de um jogador ofensivo chave pode ser um fator decisivo para a ineficácia de um favorito, mesmo com dominância estatística, se a equipa não tiver substitutos com capacidade de finalização semelhante.
 - A organização defensiva e resiliência de um underdog podem anular a dominância estatística extrema de um favorito, resultando em empates sem golos.
 - A forte motivação de um favorito para reagir a um resultado negativo pode garantir uma vitória, mas não necessariamente uma goleada, especialmente contra um adversário que, apesar de inferior em posse, consegue gerar perigo em bolas paradas.
+
+<!-- 2026-06-24 -->
+- A forte intenção ofensiva publicamente declarada por um underdog, mesmo contra um adversário superior, pode levar a um jogo aberto com golos, mas não garante a vitória.
+- Vulnerabilidades defensivas persistentes, evidenciadas por golos sofridos em múltiplos jogos anteriores, são um indicador fiável de que uma equipa continuará a conceder, mesmo contra adversários motivados.
+- Quando um favorito tem um objetivo claro de "golear" (e.g., por diferença de golos) contra um adversário já eliminado e a jogar apenas pela honra, é provável que o jogo tenha muitos golos.
+- Equipas já eliminadas, mesmo a jogar apenas pela honra, podem contribuir para o marcador, especialmente se o favorito se expõe
