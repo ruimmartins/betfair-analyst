@@ -41,3 +41,8 @@
 - Vulnerabilidades defensivas persistentes, evidenciadas por golos sofridos em múltiplos jogos anteriores, são um indicador fiável de que uma equipa continuará a conceder, mesmo contra adversários motivados.
 - Quando um favorito tem um objetivo claro de "golear" (e.g., por diferença de golos) contra um adversário já eliminado e a jogar apenas pela honra, é provável que o jogo tenha muitos golos.
 - Equipas já eliminadas, mesmo a jogar apenas pela honra, podem contribuir para o marcador, especialmente se o favorito se expõe
+
+<!-- 2026-06-25 -->
+- Após uma goleada sofrida, uma equipa pode priorizar a solidez defensiva e o controlo de danos no jogo seguinte, mesmo contra um adversário forte, resultando num jogo com menos golos do que o esperado.
+- Um favorito já qualificado e sem incentivos adicionais (e.g., liderança do grupo assegurada) é altamente vulnerável a perder contra um underdog com motivação extrema para a qualificação, especialmente se o favorito rodar jogadores chave.
+- Mesmo com dominância estatística extrema e um objetivo claro de melhorar a diferença de golos, um favorito pode ser limitado a uma vitória moderada por um underdog eliminado que joga pela honra e foca-se no controlo de danos após derrotas pesadas anteriores.
