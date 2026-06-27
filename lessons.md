@@ -46,3 +46,8 @@
 - Após uma goleada sofrida, uma equipa pode priorizar a solidez defensiva e o controlo de danos no jogo seguinte, mesmo contra um adversário forte, resultando num jogo com menos golos do que o esperado.
 - Um favorito já qualificado e sem incentivos adicionais (e.g., liderança do grupo assegurada) é altamente vulnerável a perder contra um underdog com motivação extrema para a qualificação, especialmente se o favorito rodar jogadores chave.
 - Mesmo com dominância estatística extrema e um objetivo claro de melhorar a diferença de golos, um favorito pode ser limitado a uma vitória moderada por um underdog eliminado que joga pela honra e foca-se no controlo de danos após derrotas pesadas anteriores.
+
+<!-- 2026-06-26 -->
+- Mesmo quando a narrativa pré-jogo se foca num duelo de estrelas específicas, a profundidade ofensiva de um favorito pode levar a uma goleada através de outros jogadores chave.
+- Um penálti falhado por um underdog, especialmente quando em desvantagem, pode ser um ponto de viragem crucial que impede uma recuperação e consolida a vitória do favorito.
+- Em jogos de grupo onde ambos os favoritos estão qualificados mas lutam pelo primeiro lugar para um caminho mais favorável, o favorito mais forte tende a impor-se com uma vitória decisiva.
