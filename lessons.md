@@ -51,3 +51,6 @@
 - Mesmo quando a narrativa pré-jogo se foca num duelo de estrelas específicas, a profundidade ofensiva de um favorito pode levar a uma goleada através de outros jogadores chave.
 - Um penálti falhado por um underdog, especialmente quando em desvantagem, pode ser um ponto de viragem crucial que impede uma recuperação e consolida a vitória do favorito.
 - Em jogos de grupo onde ambos os favoritos estão qualificados mas lutam pelo primeiro lugar para um caminho mais favorável, o favorito mais forte tende a impor-se com uma vitória decisiva.
+
+<!-- 2026-06-27 -->
+- Em confrontos pelo primeiro lugar do grupo entre equipas já qualificadas, a cautela mútua e a solidez defensiva de uma das equipas podem levar a um empate sem golos, contrariando a expectativa de uma vitória decisiva.
