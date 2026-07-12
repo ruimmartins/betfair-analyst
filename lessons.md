@@ -5,3 +5,8 @@
 <!-- 2026-07-09 -->
 - Um golo madrugador de um underdog contra um favorito pode desencadear uma resposta ofensiva imediata e intensa do favorito, levando a uma rápida sucessão de golos e a um primeiro tempo com pontuação elevada.
 - Cartões amarelos nos primeiros minutos para underdogs podem sinalizar uma estratégia defensiva agressiva ou dificuldade em lidar com a pressão, indicando potencial para desvantagem disciplinar e comprometimento do desempenho ao longo do jogo.
+
+<!-- 2026-07-11 -->
+- Condições ambientais extremas (e.g., calor, humidade, poluição) podem impactar significativamente o desempenho físico e tático, especialmente de equipas não aclimatizadas, e devem ser consideradas na análise de jogos prolongados.
+- Cartões disciplinares nos minutos finais do prolongamento em jogos eliminatórios podem indicar fadiga extrema ou desespero, sinalizando um ponto de rutura físico ou mental na equipa penalizada.
+- Grandes eventos noticiosos de impacto nacional, mesmo que não desportivos, podem criar um ambiente de distração ou pressão externa que afeta o foco e a preparação de uma equipa em momentos cruciais.
