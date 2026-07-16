@@ -10,3 +10,7 @@
 - Condições ambientais extremas (e.g., calor, humidade, poluição) podem impactar significativamente o desempenho físico e tático, especialmente de equipas não aclimatizadas, e devem ser consideradas na análise de jogos prolongados.
 - Cartões disciplinares nos minutos finais do prolongamento em jogos eliminatórios podem indicar fadiga extrema ou desespero, sinalizando um ponto de rutura físico ou mental na equipa penalizada.
 - Grandes eventos noticiosos de impacto nacional, mesmo que não desportivos, podem criar um ambiente de distração ou pressão externa que afeta o foco e a preparação de uma equipa em momentos cruciais.
+
+<!-- 2026-07-15 -->
+- Rivalidades históricas e nacionalistas profundas, especialmente em fases eliminatórias de grandes torneios, podem gerar uma motivação coletiva extrema capaz de impulsionar reviravoltas tardias e superar desvantagens no marcador.
+- O domínio estatístico persistente (e.g., posse de bola, cantos) de uma equipa, mesmo em desvantagem no marcador, é um forte indicador de resiliência e potencial para reviravoltas tardias, especialmente em jogos de alta importância.
