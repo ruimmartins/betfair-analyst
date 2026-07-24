@@ -14,3 +14,7 @@
 <!-- 2026-07-15 -->
 - Rivalidades históricas e nacionalistas profundas, especialmente em fases eliminatórias de grandes torneios, podem gerar uma motivação coletiva extrema capaz de impulsionar reviravoltas tardias e superar desvantagens no marcador.
 - O domínio estatístico persistente (e.g., posse de bola, cantos) de uma equipa, mesmo em desvantagem no marcador, é um forte indicador de resiliência e potencial para reviravoltas tardias, especialmente em jogos de alta importância.
+
+<!-- 2026-07-23 -->
+- A declaração pública de um underdog de que um jogo é uma "grande experiência" pode indicar uma abordagem mais conservadora, resultando em jogos de menor pontuação, mesmo contra um favorito dominante.
+- Uma sequência rápida de golos de um favorito no final do primeiro tempo pode ser tão decisiva quanto um golo madrugador, estabelecendo uma vantagem inalcançável antes do intervalo, mesmo com ausências importantes.
