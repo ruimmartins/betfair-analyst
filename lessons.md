@@ -18,3 +18,9 @@
 <!-- 2026-07-23 -->
 - A declaração pública de um underdog de que um jogo é uma "grande experiência" pode indicar uma abordagem mais conservadora, resultando em jogos de menor pontuação, mesmo contra um favorito dominante.
 - Uma sequência rápida de golos de um favorito no final do primeiro tempo pode ser tão decisiva quanto um golo madrugador, estabelecendo uma vantagem inalcançável antes do intervalo, mesmo com ausências importantes.
+
+<!-- 2026-07-26 -->
+- A vantagem histórica de um treinador sobre outro pode influenciar a resiliência da sua equipa, ajudando a evitar a derrota mesmo quando estatisticamente inferior.
+- O domínio estatístico (posse de bola, cantos) de uma equipa, mesmo que persistente, não garante a vitória ou a concretização de reviravoltas se o adversário for taticamente disciplinado ou se existirem fatores como a pressão do público ou uma vantagem histórica do treinador adversário.
+- Uma alta incidência de cartões amarelos nos primeiros minutos para ambas as equipas pode sinalizar um jogo de grande intensidade e fisicalidade, aumentando a probabilidade de um resultado apertado ou empate.
+- A expectativa de um grande público em casa pode, por vezes, gerar pressão adicional que impede uma equipa dominante de converter o seu controlo estatístico em golos.
