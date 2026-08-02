@@ -24,3 +24,6 @@
 - O domínio estatístico (posse de bola, cantos) de uma equipa, mesmo que persistente, não garante a vitória ou a concretização de reviravoltas se o adversário for taticamente disciplinado ou se existirem fatores como a pressão do público ou uma vantagem histórica do treinador adversário.
 - Uma alta incidência de cartões amarelos nos primeiros minutos para ambas as equipas pode sinalizar um jogo de grande intensidade e fisicalidade, aumentando a probabilidade de um resultado apertado ou empate.
 - A expectativa de um grande público em casa pode, por vezes, gerar pressão adicional que impede uma equipa dominante de converter o seu controlo estatístico em golos.
+
+<!-- 2026-08-01 -->
+- A ocorrência de cartões amarelos nos primeiros minutos para uma única equipa não impede um empate sem golos, especialmente se a equipa conseguir manter a disciplina defensiva e o jogo for taticamente equilibrado.
