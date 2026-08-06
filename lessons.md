@@ -27,3 +27,7 @@
 
 <!-- 2026-08-01 -->
 - A ocorrência de cartões amarelos nos primeiros minutos para uma única equipa não impede um empate sem golos, especialmente se a equipa conseguir manter a disciplina defensiva e o jogo for taticamente equilibrado.
+
+<!-- 2026-08-05 -->
+- Uma equipa com domínio estatístico claro pode estabelecer uma vantagem decisiva com um único golo nos minutos finais do primeiro tempo, mesmo sem golos madrugadores.
+- A alta incidência de cartões amarelos nos primeiros minutos para ambas as equipas não impede uma vitória confortável de uma equipa estatisticamente dominante.
