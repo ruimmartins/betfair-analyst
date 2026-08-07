@@ -31,3 +31,8 @@
 <!-- 2026-08-05 -->
 - Uma equipa com domínio estatístico claro pode estabelecer uma vantagem decisiva com um único golo nos minutos finais do primeiro tempo, mesmo sem golos madrugadores.
 - A alta incidência de cartões amarelos nos primeiros minutos para ambas as equipas não impede uma vitória confortável de uma equipa estatisticamente dominante.
+
+<!-- 2026-08-06 -->
+- Uma equipa que capitaliza um golo madrugador e mantém a disciplina tática pode converter posse de bola equilibrada numa vitória confortável, especialmente se o adversário acumular cartões e falhar em reagir ofensivamente.
+- Uma equipa em "onda de confiança" e com forte apoio de analistas pode demonstrar resiliência notável, conseguindo resultados positivos fora de casa mesmo quando em desvantagem estatística ou após sofrer um golo.
+- A chegada de um novo jogador com características de "maturidade" e "experiência em promoções" pode ser um fator chave para a resiliência tática de uma equipa, permitindo-lhe defender uma vantagem e vencer contra um adversário com domínio estatístico esmagador.
