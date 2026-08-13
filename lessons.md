@@ -36,3 +36,8 @@
 - Uma equipa que capitaliza um golo madrugador e mantém a disciplina tática pode converter posse de bola equilibrada numa vitória confortável, especialmente se o adversário acumular cartões e falhar em reagir ofensivamente.
 - Uma equipa em "onda de confiança" e com forte apoio de analistas pode demonstrar resiliência notável, conseguindo resultados positivos fora de casa mesmo quando em desvantagem estatística ou após sofrer um golo.
 - A chegada de um novo jogador com características de "maturidade" e "experiência em promoções" pode ser um fator chave para a resiliência tática de uma equipa, permitindo-lhe defender uma vantagem e vencer contra um adversário com domínio estatístico esmagador.
+
+<!-- 2026-08-12 -->
+- A advertência disciplinar para uma equipa dominante pode, por vezes, preceder um golo imediato, indicando um aumento da intensidade ou foco que se traduz em eficácia ofensiva.
+- Equipas estatisticamente dominantes, mesmo já em vantagem, podem selar a vitória com golos tardios provenientes de grandes penalidades, confirmando a sua superioridade e pressão contínua.
+- Cartões amarelos tardios para underdogs sob pressão podem ser um sinal de desespero ou fadiga, levando a erros defensivos que resultam em grandes penalidades decisivas para o favorito.
