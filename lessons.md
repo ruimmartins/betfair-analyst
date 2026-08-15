@@ -41,3 +41,7 @@
 - A advertência disciplinar para uma equipa dominante pode, por vezes, preceder um golo imediato, indicando um aumento da intensidade ou foco que se traduz em eficácia ofensiva.
 - Equipas estatisticamente dominantes, mesmo já em vantagem, podem selar a vitória com golos tardios provenientes de grandes penalidades, confirmando a sua superioridade e pressão contínua.
 - Cartões amarelos tardios para underdogs sob pressão podem ser um sinal de desespero ou fadiga, levando a erros defensivos que resultam em grandes penalidades decisivas para o favorito.
+
+<!-- 2026-08-14 -->
+- Equipas favoritas, mesmo em fase de "novo ciclo" ou com menor posse de bola e cantos, podem ser extremamente eficientes e vencer confortavelmente se a sua qualidade individual e eficácia ofensiva superarem a do adversário.
+- Uma sequência rápida de golos de um favorito no início do segundo tempo pode ser tão decisiva quanto um golo madrugador, solidificando a vantagem e quebrando a moral do adversário.
