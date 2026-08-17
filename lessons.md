@@ -45,3 +45,7 @@
 <!-- 2026-08-14 -->
 - Equipas favoritas, mesmo em fase de "novo ciclo" ou com menor posse de bola e cantos, podem ser extremamente eficientes e vencer confortavelmente se a sua qualidade individual e eficácia ofensiva superarem a do adversário.
 - Uma sequência rápida de golos de um favorito no início do segundo tempo pode ser tão decisiva quanto um golo madrugador, solidificando a vantagem e quebrando a moral do adversário.
+
+<!-- 2026-08-16 -->
+- Em jogos de menor importância ou de "abertura de temporada" (e.g., Community Shield), a eficácia ofensiva e a disciplina tática de uma equipa podem anular o domínio estatístico do adversário, permitindo vitórias confortáveis com menor posse de bola e cantos.
+- Uma equipa pode capitalizar um golo madrugador e manter a disciplina tática para vencer confortavelmente, mesmo com posse de bola significativamente inferior, se o adversário falhar em reagir ofensivamente e acumular cartões.
