@@ -49,3 +49,9 @@
 <!-- 2026-08-16 -->
 - Em jogos de menor importância ou de "abertura de temporada" (e.g., Community Shield), a eficácia ofensiva e a disciplina tática de uma equipa podem anular o domínio estatístico do adversário, permitindo vitórias confortáveis com menor posse de bola e cantos.
 - Uma equipa pode capitalizar um golo madrugador e manter a disciplina tática para vencer confortavelmente, mesmo com posse de bola significativamente inferior, se o adversário falhar em reagir ofensivamente e acumular cartões.
+
+<!-- 2026-08-21 -->
+- Notícias internas sobre decisões administrativas (e.g., capitania) em equipas favoritas podem não impactar o desempenho em campo contra adversários significativamente mais fracos, especialmente em competições de taça onde a superioridade técnica é evidente.
+- Em jogos de abertura de temporada, mudanças significativas na estrutura administrativa de um clube favorito podem não impactar o desempenho em campo, especialmente se a equipa tiver forte apoio da torcida e qualidade superior.
+- Uma equipa com um plantel "largamente remodelado" e muitas novas contratações pode apresentar falta de coesão e disciplina em jogos iniciais da temporada, resultando em desempenho fraco e alta incidência de cartões contra adversários mais estabelecidos.
+- A atitude de "sem medo" de equipas recém
