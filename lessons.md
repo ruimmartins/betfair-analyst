@@ -55,3 +55,9 @@
 - Em jogos de abertura de temporada, mudanças significativas na estrutura administrativa de um clube favorito podem não impactar o desempenho em campo, especialmente se a equipa tiver forte apoio da torcida e qualidade superior.
 - Uma equipa com um plantel "largamente remodelado" e muitas novas contratações pode apresentar falta de coesão e disciplina em jogos iniciais da temporada, resultando em desempenho fraco e alta incidência de cartões contra adversários mais estabelecidos.
 - A atitude de "sem medo" de equipas recém
+
+<!-- 2026-08-22 -->
+- Um underdog de divisão inferior com um histórico positivo de confrontos diretos contra um favorito, especialmente em jogos de taça transmitidos em canal aberto, pode demonstrar resiliência e superar desvantagens estatísticas.
+- Mesmo que um favorito dominante receba cartões no primeiro tempo, a sua superioridade de qualidade e a mentalidade de "equipa a bater" podem impulsionar uma explosão ofensiva decisiva no início do segundo tempo contra um adversário recém-promovido.
+- Equipas recém-promovidas podem exibir um domínio estatístico significativo (e.g., posse de bola, cantos) contra adversários estabelecidos da liga, mesmo fora de casa, resultando em empates inesperados no início da temporada.
+- Críticas públicas
