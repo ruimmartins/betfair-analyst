@@ -6,3 +6,8 @@
 - Equipas em fases iniciais de transição (novo treinador, ausências chave, necessidades de mercado) podem dominar estatisticamente mas falhar em converter essa superioridade em resultados, devido à falta de coesão tática.
 - Ausências defensivas específicas e importantes podem comprometer a estrutura da equipa e a capacidade de evitar golos, mesmo que o controlo geral do jogo seja mantido.
 - Um golo madrugador pode alterar drasticamente o guião do jogo, forçando a equipa em desvantagem (especialmente se em transição) a abrir-se, resultando num jogo mais aberto e imprevisível.
+
+<!-- 2026-08-26 -->
+- Acompanhar de perto as notícias sobre negociações de transferências de jogadores chave, pois podem afetar o foco individual e a performance da equipa, mesmo em jogos de alta importância.
+- A posse de bola dominante não garante a segurança defensiva nem o controlo do resultado, especialmente contra adversários que são eficazes a capitalizar as suas oportunidades e a marcar golos madrugadores.
+- Padrões históricos de confrontos diretos (H2H) devem ser contextualizados e não sobrevalorizados, pois a dinâmica atual das equipas e o momento da competição podem anular tendências passadas.
