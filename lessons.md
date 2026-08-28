@@ -11,3 +11,7 @@
 - Acompanhar de perto as notícias sobre negociações de transferências de jogadores chave, pois podem afetar o foco individual e a performance da equipa, mesmo em jogos de alta importância.
 - A posse de bola dominante não garante a segurança defensiva nem o controlo do resultado, especialmente contra adversários que são eficazes a capitalizar as suas oportunidades e a marcar golos madrugadores.
 - Padrões históricos de confrontos diretos (H2H) devem ser contextualizados e não sobrevalorizados, pois a dinâmica atual das equipas e o momento da competição podem anular tendências passadas.
+
+<!-- 2026-08-27 -->
+- Padrões históricos de fraco desempenho em contextos específicos (e.g., jogos europeus fora de casa) podem ser mais preditivos do que a motivação pontual para um jogo decisivo.
+- Declarações explícitas do treinador sobre o foco total num jogo, mesmo com um confronto de alto perfil iminente, podem sinalizar uma mentalidade de equipa forte e um desempenho concentrado.
