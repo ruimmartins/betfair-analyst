@@ -15,3 +15,9 @@
 <!-- 2026-08-27 -->
 - Padrões históricos de fraco desempenho em contextos específicos (e.g., jogos europeus fora de casa) podem ser mais preditivos do que a motivação pontual para um jogo decisivo.
 - Declarações explícitas do treinador sobre o foco total num jogo, mesmo com um confronto de alto perfil iminente, podem sinalizar uma mentalidade de equipa forte e um desempenho concentrado.
+
+<!-- 2026-08-29 -->
+- Um conflito interno publicamente conhecido ou a alienação de um jogador chave pela equipa técnica pode desestabilizar severamente uma equipa, levando um favorito forte a ter um desempenho inesperadamente fraco.
+- Underdogs explicitamente motivados por críticas externas ou uma perceção de falta de respeito podem ter um desempenho significativamente superior, mesmo quando estatisticamente dominados.
+- Momentos de grande carga emocional, como jogos históricos em casa ou homenagens, não garantem um desempenho positivo se a equipa falhar na conversão do seu domínio, especialmente contra um adversário altamente motivado.
+- A ausência de jogadores chave num favorito forte pode não ser prejudicial se o plantel tiver profundidade suficiente ou o adversário for mais fraco, desafiando a premissa de que todas as ausências são igualmente impactantes.
