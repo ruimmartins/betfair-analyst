@@ -21,3 +21,8 @@
 - Underdogs explicitamente motivados por críticas externas ou uma perceção de falta de respeito podem ter um desempenho significativamente superior, mesmo quando estatisticamente dominados.
 - Momentos de grande carga emocional, como jogos históricos em casa ou homenagens, não garantem um desempenho positivo se a equipa falhar na conversão do seu domínio, especialmente contra um adversário altamente motivado.
 - A ausência de jogadores chave num favorito forte pode não ser prejudicial se o plantel tiver profundidade suficiente ou o adversário for mais fraco, desafiando a premissa de que todas as ausências são igualmente impactantes.
+
+<!-- 2026-08-30 -->
+- A eficácia clínica e a adaptação tática de uma equipa sob um novo treinador podem anular a dominância estatística do adversário, permitindo vitórias com baixa posse de bola.
+- A gestão estratégica do plantel, com rotação de jogadores chave em jogos de taça para os manter frescos e motivados para a liga, pode ser um indicador de desempenho sustentado e profundidade de equipa.
+- A combinação de um forte fator casa (primeiro jogo em casa, adeptos entusiasmados), moral elevada da equipa (sucesso recente, qualificação europeia) e uma narrativa de "vingança" contra um rival pode criar uma vantagem motivacional poderosa que anula a inferioridade estatística.
