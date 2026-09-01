@@ -26,3 +26,9 @@
 - A eficácia clínica e a adaptação tática de uma equipa sob um novo treinador podem anular a dominância estatística do adversário, permitindo vitórias com baixa posse de bola.
 - A gestão estratégica do plantel, com rotação de jogadores chave em jogos de taça para os manter frescos e motivados para a liga, pode ser um indicador de desempenho sustentado e profundidade de equipa.
 - A combinação de um forte fator casa (primeiro jogo em casa, adeptos entusiasmados), moral elevada da equipa (sucesso recente, qualificação europeia) e uma narrativa de "vingança" contra um rival pode criar uma vantagem motivacional poderosa que anula a inferioridade estatística.
+
+<!-- 2026-08-31 -->
+- A forte superioridade técnica e tática de um favorito pode anular o impacto de um golo madrugador do adversário, permitindo-lhe manter o domínio estatístico e reverter o resultado para uma vitória confortável.
+- A ausência de um jogador chave para um underdog pode não impedir que marquem em jogos abertos, mas raramente é suficiente para superar um favorito dominante.
+- Estratégias agressivas para maximizar o fator casa e a motivação dos adeptos (e.g., redução drástica de preços de bilhetes para equipas em luta pela manutenção) podem gerar domínio estatístico, mas não garantem a vitória se a equipa falhar na eficácia ofensiva ou defensiva.
+- A motivação para alcançar vagas em competições continentais pode ser um contraponto eficaz à motivação de um underdog em luta pela manutenção, permitindo que equipas de meio de tabela sejam mais clínicas e superem o domínio estatístico do adversário.
